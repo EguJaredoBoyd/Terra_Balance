@@ -1,0 +1,317 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.hero {
+    background: url('photos/eco.webp') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 5px #000;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-out; /* Smooth hover effect for floating */
+}
+
+/* Scrolling Effect */
+.hero:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Optional: Add a subtle opacity overlay to enhance readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent dark overlay */
+    z-index: -1; /* Ensures the overlay is behind the text */
+}
+
+/* Smooth transition of background scrolling */
+.hero img {
+    transition: transform 0.3s ease-out;
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #2d6a4f !important; /* Forest Green */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff !important; /* Ensures text color remains white */
+}
+
+.navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f8f9fa; /* Light background for the About section */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f8f9fa; /* Light background for the About section */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Image Styling */
+.custom-photo {
+    width: 250px;  /* Control the size of the image */
+    height: 250px;
+    object-fit: cover; /* Ensure the image doesn't stretch */
+    border-radius: 50%; /* Make the image circular */
+    border: 5px solid #fff; /* Optional: Add a border around the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a bold look */
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2rem;
+    color: #007bff; /* Choose a primary color for your headings */
+}
+
+/* About Text */
+#about p {
+    font-size: 1.1rem;
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+    text-align: justify; /* Align text neatly */
+    margin-bottom: 20px;
+}
+
+/* Heading Styling for Founder Section */
+h4 {
+    font-size: 1.5rem;
+    color: darkgreen;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/* Footer Styles with .feet class */
+.feet {
+    background-color: #2d6a4f; /* A rich forest green for an eco-friendly vibe */
+    color: #ffffff; /* White text for contrast */
+    padding: 40px 20px; /* Adequate spacing around content */
+    font-size: 1rem;
+}
+
+.feet p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.feet h2 {
+    color: #ffffff; /* Ensures the 'Contact Me' heading is white */
+    font-size: 2rem; /* Set a larger font size for visibility */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.feet a {
+    color: #ffffff; /* Default link color is white */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.feet a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+    color: #8d9e73; /* Soft green when hovered */
+}
+
+/* Styling Contact Buttons */
+.feet .btn-outline-success {
+    border-color: #27ae60; /* Green border */
+    color: #27ae60; /* Green text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.feet .btn-outline-success:hover {
+    background-color: #27ae60; /* Green background on hover */
+    color: white; /* White text on hover */
+}
+
+.feet .social-icons {
+    margin-top: 20px; /* Space above social icons */
+}
+
+.feet .social-icons a {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 0 20px; /* Space between icons */
+    transition: color 0.3s ease-in-out;
+}
+
+.feet .social-icons a:hover {
+    color: #8d9e73; /* Soft green color when hovered */
+}
+
+.feet .row .col-md-4 p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Section Titles */
+h2 {
+    color: #2d6a4f; /* Forest Green */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Product Cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #343a40;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #2d6a4f; /* Forest Green */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1e4e3f; /* Darker Forest Green */
+}
+
+/* Cart Section */
+.cart-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #2d6a4f; /* Forest Green */
+    color: #ffffff;
+}
+
+.cart-table td {
+    background-color: #ffffff;
+}
+
+.cart-total {
+    font-size: 1.5rem;
+    color: #2d6a4f; /* Forest Green */
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-success {
+    background-color: #4caf50; /* Light Green */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #388e3c; /* Darker Green */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Rating Section */
+.rating {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ffc107;
+    cursor: pointer;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating input:checked ~ label {
+    color: #2d6a4f; /* Forest Green */
+}
+
+.rating input:not(:checked) ~ label:hover,
+.rating input:not(:checked) ~ label:hover ~ label {
+    color: #ffc107;
+}
+
+.review-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #2d6a4f; /* Forest Green */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
