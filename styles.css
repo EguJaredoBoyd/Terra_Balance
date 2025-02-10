@@ -7,6 +7,7 @@ body {
     background-color: #f8f9fa; /* Light gray background */
 }
 
+/* Hero Section */
 .hero {
     background: url('photos/eco.webp') no-repeat center center/cover;
     height: 500px;
@@ -17,32 +18,21 @@ body {
     text-shadow: 1px 1px 5px #000;
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease-out; /* Smooth hover effect for floating */
+    transition: transform 0.3s ease-out; /* Smooth hover effect */
 }
 
-/* Scrolling Effect */
 .hero:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-/* Optional: Add a subtle opacity overlay to enhance readability */
+/* Overlay Effect */
 .hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2); /* Semi-transparent dark overlay */
-    z-index: -1; /* Ensures the overlay is behind the text */
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+    z-index: -1;
 }
-
-/* Smooth transition of background scrolling */
-.hero img {
-    transition: transform 0.3s ease-out;
-}
-
-
 
 /* Navbar */
 .navbar {
@@ -51,131 +41,92 @@ body {
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: #ffffff !important; /* Ensures text color remains white */
+    color: #ffffff !important;
 }
 
 .navbar .nav-link:hover {
     text-decoration: underline;
 }
 
-/* About Section Styling */
+/* About Section */
 #about {
-    background-color: #f8f9fa; /* Light background for the About section */
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-/* About Section Styling */
-#about {
-    background-color: #f8f9fa; /* Light background for the About section */
-    padding-top: 50px;
-    padding-bottom: 50px;
+#about p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
 }
 
-/* Image Styling */
+/* Circular Profile Image */
 .custom-photo {
-    width: 250px;  /* Control the size of the image */
+    width: 250px;
     height: 250px;
-    object-fit: cover; /* Ensure the image doesn't stretch */
-    border-radius: 50%; /* Make the image circular */
-    border: 5px solid #fff; /* Optional: Add a border around the image */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a bold look */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Headings */
 h2 {
     font-size: 2rem;
-    color: #007bff; /* Choose a primary color for your headings */
-}
-
-/* About Text */
-#about p {
-    font-size: 1.1rem;
-    color: #333; /* Dark text color for readability */
-    line-height: 1.6;
-    text-align: justify; /* Align text neatly */
+    color: #2d6a4f; /* Forest Green */
+    text-align: center;
     margin-bottom: 20px;
 }
 
-/* Heading Styling for Founder Section */
-h4 {
-    font-size: 1.5rem;
-    color: darkgreen;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-
-/* Footer Styles with .feet class */
+/* Footer */
 .feet {
-    background-color: #2d6a4f; /* A rich forest green for an eco-friendly vibe */
-    color: #ffffff; /* White text for contrast */
-    padding: 40px 20px; /* Adequate spacing around content */
-    font-size: 1rem;
-}
-
-.feet p {
-    margin: 0; /* Remove default margin */
-    font-size: 1.2rem;
-    font-weight: 400;
+    background-color: #2d6a4f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .feet h2 {
-    color: #ffffff; /* Ensures the 'Contact Me' heading is white */
-    font-size: 2rem; /* Set a larger font size for visibility */
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .feet a {
-    color: #ffffff; /* Default link color is white */
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
 .feet a:hover {
-    text-decoration: underline; /* Underline on hover for links */
-    color: #8d9e73; /* Soft green when hovered */
+    text-decoration: underline;
+    color: #8d9e73; /* Soft green */
 }
 
-/* Styling Contact Buttons */
+/* Contact Buttons */
 .feet .btn-outline-success {
-    border-color: #27ae60; /* Green border */
-    color: #27ae60; /* Green text */
+    border-color: #27ae60;
+    color: #27ae60;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.3s;
 }
 
 .feet .btn-outline-success:hover {
-    background-color: #27ae60; /* Green background on hover */
-    color: white; /* White text on hover */
+    background-color: #27ae60;
+    color: white;
 }
 
-.feet .social-icons {
-    margin-top: 20px; /* Space above social icons */
-}
-
+/* Social Media Icons */
 .feet .social-icons a {
-    color: #ffffff;
+    color: white;
     font-size: 2.5rem;
-    margin: 0 20px; /* Space between icons */
+    margin: 0 15px;
     transition: color 0.3s ease-in-out;
 }
 
 .feet .social-icons a:hover {
-    color: #8d9e73; /* Soft green color when hovered */
-}
-
-.feet .row .col-md-4 p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #ffffff;
-}
-
-/* Section Titles */
-h2 {
-    color: #2d6a4f; /* Forest Green */
-    text-align: center;
-    margin-bottom: 20px;
+    color: #8d9e73;
 }
 
 /* Product Cards */
@@ -206,16 +157,16 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #2d6a4f; /* Forest Green */
+    background-color: #2d6a4f;
     border: none;
     transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #1e4e3f; /* Darker Forest Green */
+    background-color: #1e4e3f;
 }
 
-/* Cart Section */
+/* Cart Table */
 .cart-table {
     width: 100%;
     margin-top: 20px;
@@ -230,29 +181,19 @@ h2 {
 }
 
 .cart-table th {
-    background-color: #2d6a4f; /* Forest Green */
-    color: #ffffff;
+    background-color: #2d6a4f;
+    color: white;
 }
 
-.cart-table td {
-    background-color: #ffffff;
-}
-
-.cart-total {
-    font-size: 1.5rem;
-    color: #2d6a4f; /* Forest Green */
-    text-align: right;
-    margin-top: 20px;
-}
-
+/* Checkout Buttons */
 .btn-success {
-    background-color: #4caf50; /* Light Green */
+    background-color: #4caf50;
     border: none;
     transition: background-color 0.3s;
 }
 
 .btn-success:hover {
-    background-color: #388e3c; /* Darker Green */
+    background-color: #388e3c;
 }
 
 .btn-danger {
@@ -282,7 +223,7 @@ h2 {
 }
 
 .rating input:checked ~ label {
-    color: #2d6a4f; /* Forest Green */
+    color: #2d6a4f;
 }
 
 .rating input:not(:checked) ~ label:hover,
@@ -290,6 +231,7 @@ h2 {
     color: #ffc107;
 }
 
+/* Review Textbox */
 .review-textarea {
     width: 100%;
     padding: 10px;
@@ -300,10 +242,10 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #2d6a4f; /* Forest Green */
-    color: #ffffff;
+    background-color: #2d6a4f;
+    color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     margin-top: 20px;
 }
 
@@ -314,4 +256,48 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* 🌐 Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .custom-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar .nav-link {
+        display: block;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .custom-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card {
+        width: 100%;
+    }
 }
